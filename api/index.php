@@ -55,6 +55,17 @@
     <div class="card">
       <h3>Atelier 1</h3>
       <p>Introduction PHP</p>
+
+
+
+      <ul>
+
+<li> <a href="exercice1.php">Exercice 1 :</a> </li>
+
+<li> <a href="exercice1.php">Exercice 1 :</a> </li>
+<li> <a href="#">Rapport</a> </li>
+
+      </ul>
       <a href="ateliers/atelier1/index.php" class="btn">Ouvrir</a>
     </div>
 
