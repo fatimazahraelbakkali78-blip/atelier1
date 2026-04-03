@@ -17,11 +17,10 @@
             echo("<td>$res</td>");
         }
         echo("</tr>");
-    
-    echo("</table>");
-    
-     }
-     table_mul(9,9)
+    }
+    echo("</table>");{}
+    }
+     table_mul(9,9);
     ?>
 <br>
 <br>
