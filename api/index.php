@@ -60,7 +60,8 @@
       <ul>
         <li><a href="exercice1.php">Exercice 1 :</a></li>
         <li><a href="exercice2.php">Exercice 2 :</a></li>
-        <li><a href="Rapport.php">Rapport</a></li>
+        <li><a href="Rapport ex1.pdf">Rapport1</a></li>
+        <li><a href="Rapport ex2.pdf">Rapport2</a></li>
       </ul>
       <a href="ateliers/atelier1/index.php" class="btn">Ouvrir</a>
     </div>
