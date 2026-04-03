@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #f1f5f9;">
     <?php
     function table_mul($a,$b){
     echo("<table border='1'>");
@@ -17,7 +17,7 @@
             echo("<td>$res</td>");
         }
         echo("</tr>");
-    }
+    
     echo("</table>");
     
      }
