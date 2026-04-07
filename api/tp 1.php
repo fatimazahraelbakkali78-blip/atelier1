@@ -3,121 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interface Professionnelle PHP</title>
+    <title>Interface Pro Dark</title>
     <style>
         :root {
+            --bg-dark: #121212;
+            --card-bg: #1e1e1e;
             --primary: #6366f1;
-            --primary-hover: #4f46e5;
-            --bg: #f8fafc;
-            --text: #1e293b;
-            --card-bg: #ffffff;
+            --text-gray: #b3b3b3;
+            --accent-green: #064e3b;
+            --text-green: #10b981;
         }
 
         body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-dark);
+            color: white;
             margin: 0;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: row; 
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            min-height: 100vh;
         }
 
         .container {
             background: var(--card-bg);
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            width: 100%;
-            max-width: 500px;
-            margin-bottom: 20px;
+            padding: 40px;
+            border-radius: 20px;
+            width: 450px;
+            min-height: 600px; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
         }
 
         h2 {
-            margin-top: 0;
-            font-size: 1.2rem;
             color: var(--primary);
-            border-bottom: 2px solid #f1f5f9;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
         }
 
-        /* Style dyal les liens (Links) */
         .links-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 10px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 12px;
+            margin-bottom: 30px;
         }
 
         .links-grid a {
             text-decoration: none;
-            background: #f1f5f9;
-            color: var(--text);
-            padding: 8px;
-            border-radius: 8px;
+            background: #2d2d2d;
+            color: white;
+            padding: 12px 5px;
+            border-radius: 10px;
             text-align: center;
-            font-weight: 600;
-            transition: all 0.2s;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: 0.3s;
         }
 
         .links-grid a:hover {
             background: var(--primary);
-            color: white;
-            transform: translateY(-2px);
+            transform: scale(1.1);
         }
 
-        /* Style dyal Formulaire */
+        .result-display {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid var(--accent-green);
+            padding: 20px;
+            border-radius: 12px;
+            color: var(--text-green);
+            font-size: 1.1rem;
+        }
+
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 25px;
         }
 
         label {
             display: block;
-            margin-bottom: 5px;
+            color: white;
+            margin-bottom: 10px;
             font-weight: 500;
-            font-size: 0.9rem;
         }
 
         input[type="text"] {
             width: 100%;
-            padding: 12px;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            box-sizing: border-box;
+            background: #2d2d2d;
+            border: 1px solid #444;
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
             outline: none;
-            transition: border-color 0.2s;
         }
 
-        input[type="text"]:focus {
-            border-color: var(--primary);
-        }
-
-        input[type="submit"] {
+        .btn-submit {
             width: 100%;
             background: var(--primary);
             color: white;
             border: none;
-            padding: 12px;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-
-        input[type="submit"]:hover {
-            background: var(--primary-hover);
-        }
-
-        /* Resultat box */
-        .result-box {
-            background: #ecfdf5;
-            color: #065f46;
             padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #10b981;
-            margin-top: 20px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background: #4f46e5;
+            box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+        }
+
+        @media (max-width: 950px) {
+            body { flex-direction: column; align-items: center; }
         }
     </style>
 </head>
@@ -134,8 +133,12 @@
         </div>
 
         <?php if (isset($_GET["val"])): ?>
-            <div class="result-box">
-                Vous avez choisi : <strong><?php echo $_GET["val"]; ?></strong>
+            <div class="result-display">
+                Vous avez choisi : <strong><?php echo htmlspecialchars($_GET["val"]); ?></strong>
+            </div>
+        <?php else: ?>
+            <div class="result-display" style="border-color: #444; color: #666;">
+                Aucune valeur choisie
             </div>
         <?php endif; ?>
     </div>
@@ -151,15 +154,17 @@
                 <label>Prénom</label>
                 <input type="text" name="prenom" placeholder="Votre prénom"> 
             </div>
-            <input type="submit" name="btn_valider" value="Valider"> 
+            <button type="submit" name="valider" class="btn-submit">Valider</button>
         </form>
 
         <?php 
-        if (isset($_POST["btn_valider"])) {
-            $nom = $_POST["nom"]; 
-            $prenom = $_POST["prenom"]; 
+        if (isset($_POST["valider"])) {
+            $nom = htmlspecialchars($_POST["nom"]); 
+            $prenom = htmlspecialchars($_POST["prenom"]); 
             if (!empty($nom) && !empty($prenom)) {
-                echo "<div class='result-box'>Bienvenue <strong>$nom $prenom</strong></div>";
+                echo "<div class='result-display' style='margin-top:20px;'>";
+                echo "Bienvenue <strong>$nom $prenom</strong>";
+                echo "</div>";
             }
         }
         ?> 
