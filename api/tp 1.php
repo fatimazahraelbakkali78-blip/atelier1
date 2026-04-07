@@ -6,8 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="POST" action="resultat 2.php">
-   
-</form>
+    
+<?php
+// api/resultat.php
+$nom = $_POST["nom"];
+$prenom = $_POST["prenom"];
+echo "Bienvenue " . $nom . " " . $prenom;
+?>
 </body>
 </html>
