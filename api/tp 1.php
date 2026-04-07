@@ -45,8 +45,8 @@
 
         /* Style dyal les liens (Links) */
         .links-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
             gap: 10px;
             margin-bottom: 10px;
         }
