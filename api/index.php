@@ -69,7 +69,13 @@
     <div class="card">
       <h3>Atelier 2</h3>
       <p>Variables et Conditions</p>
+       <ul>
+        <li><a href="EXERCICE 1.PHP">Exercice 1 :</a></li>
+        <li><a href="EXERCICE 2.PHP">Exercice 2 :</a></li>
+       
+      </ul>
       <a href="ateliers/atelier2/index.php" class="btn">Ouvrir</a>
+      
     </div>
 
     <div class="card">
