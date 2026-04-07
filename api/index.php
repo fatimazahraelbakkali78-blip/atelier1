@@ -72,7 +72,8 @@
        <ul>
         <li><a href="EXERCICE 1.PHP">Exercice 1 :</a></li>
         <li><a href="EXERCICE 2.PHP">Exercice 2 :</a></li>
-       
+        <li><a href="resultat 1.html">Rapport1</a></li>
+        <li><a href="resultat 2.html">Rapport2</a></li>
       </ul>
       <a href="ateliers/atelier2/index.php" class="btn">Ouvrir</a>
       
