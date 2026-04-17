@@ -10,7 +10,7 @@
     header { background:#0f172a; color:white; padding:20px; }
     nav { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
     nav ul { list-style:none; display:flex; gap:15px; }
-    nav a { color:white; text-decoration:none; font-weight:bold; }
+    nav a { color:white; text-decoration:none; font-weight:bold;text-decoration: none; }
     .hero { padding:60px 20px; text-align:center; background:#f1f5f9; }
     .hero h1 { font-size:2.2rem; margin-bottom:10px; }
     .hero p { max-width:600px; margin:0 auto; }
