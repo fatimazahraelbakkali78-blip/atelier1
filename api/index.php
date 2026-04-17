@@ -504,7 +504,7 @@
 
 <!-- NAVBAR -->
 <nav>
-  <a class="nav-logo" href="#home">fatima zohra el baQQali </a>
+  <a class="nav-logo" href="#home">Sara Hamda</a>
   <ul class="nav-links">
     <li class="active"><a href="#home">Home</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -522,12 +522,12 @@
         <img src="ta-photo.jpg" alt="Sara Hamda"/>
         Si pas encore de photo, on garde le placeholder :
       -->
-      <div class="photo-placeholder" ><img src="public/photo fatima.jpeg" alt="#"></div>
+      <div class="photo-placeholder"><img src="public/photo-fatima.jpeg" alt="fatima zohra el baQQali"></div>
     </div>
 
     <div class="hero-text">
       <p class="hello">Hello, I'm</p>
-      <h1>fatima zohra el baQQali</h1>
+      <h1>Sara Hamda</h1>
       <p class="subtitle">Étudiante en première année, spécialisée dans le <strong>développement web</strong>.</p>
       <p class="tagline">Passionnée par la création de sites web modernes et interactifs.</p>
       <a class="btn-cv" href="#" onclick="alert('Ton CV sera ici!')">Download CV</a>
@@ -572,8 +572,8 @@
       <div class="project-info">
         <h3>Projet 1</h3>
         <div class="project-actions">
-          <a class="btn-live" href="api/Projet 1.php" onclick="alert('Lien live demo ici')">View Live</a>
-          <a class="btn-code" href="api/Projet 1.php" onclick="alert('Lien GitHub ici')">Code</a>
+          <a class="btn-live" href="api/Projet1.php" onclick="alert('Lien GitHub ici ')">View Live</a>
+          <a class="btn-code" href="api/Projet1.php" onclick="alert('Lien GitHub ici')">Code</a>
         </div>
       </div>
     </div>
@@ -610,8 +610,8 @@
       <div class="project-info">
         <h3>Projet 2</h3>
         <div class="project-actions">
-          <a class="btn-live" href="api/Projet 2.php" onclick="alert('Lien live demo ici')">View Live</a>
-          <a class="btn-code" href="api/Projet 2.php" onclick="alert('Lien GitHub ici')">Code</a>
+          <a class="btn-live" href="api/Projet2.php" onclick="alert('Lien live demo ici')">View Live</a>
+          <a class="btn-code" href="api/Projet2.php" onclick="alert('Lien GitHub ici')">Code</a>
         </div>
       </div>
     </div>
@@ -643,8 +643,8 @@
       <div class="project-info">
         <h3>Projet 3</h3>
         <div class="project-actions">
-          <a class="btn-live" href="api/Projet 3.php" onclick="alert('Lien live demo ici')">View Live</a>
-          <a class="btn-code" href="api/Projet 3.php" onclick="alert('Lien GitHub ici')">Code</a>
+          <a class="btn-live" href="api/Projet3.php" onclick="alert('Lien live demo ici')">View Live</a>
+          <a class="btn-code" href="api/Projet3.php" onclick="alert('Lien GitHub ici')">Code</a>
         </div>
       </div>
     </div>
@@ -656,7 +656,7 @@
 <section id="about">
   <div class="about-inner">
     <h2 class="fade-in">À propos</h2>
-    <p class="fade-in">Je suis fatima zohra el baQQali, étudiante en première année spécialisée dans le développement web. Passionnée par la création d'interfaces modernes et intuitives, je construis des projets avec HTML, CSS et JavaScript.</p>
+    <p class="fade-in">Je suis Sara Hamda, étudiante en première année spécialisée dans le développement web. Passionnée par la création d'interfaces modernes et intuitives, je construis des projets avec HTML, CSS et JavaScript.</p>
     <div class="skills-row fade-in">
       <span class="skill-badge">HTML5</span>
       <span class="skill-badge">CSS3</span>
@@ -675,7 +675,7 @@
   <div class="contact-links fade-in">
     <a class="contact-link" href="mailto:sara.hamda@email.com">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M1 5l7 5 7-5" stroke="currentColor" stroke-width="1.3"/></svg>
-      fatimazahraelbakkali78@email.com
+      sara.hamda@email.com
     </a>
     <a class="contact-link" href="https://github.com" target="_blank">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1C4.13 1 1 4.13 1 8c0 3.09 2.01 5.71 4.79 6.63.35.06.48-.15.48-.33v-1.16c-1.95.42-2.36-.94-2.36-.94-.32-.81-.78-1.03-.78-1.03-.64-.44.05-.43.05-.43.7.05 1.07.72 1.07.72.62 1.07 1.63.76 2.03.58.06-.45.24-.76.44-.93-1.56-.18-3.2-.78-3.2-3.47 0-.77.27-1.39.72-1.88-.07-.18-.31-.89.07-1.86 0 0 .59-.19 1.93.72A6.7 6.7 0 018 5.3c.6 0 1.2.08 1.77.23 1.34-.91 1.93-.72 1.93-.72.38.97.14 1.68.07 1.86.45.49.72 1.11.72 1.88 0 2.7-1.64 3.29-3.2 3.47.25.22.47.65.47 1.31v1.94c0 .19.13.4.48.33A6.995 6.995 0 0015 8c0-3.87-3.13-7-7-7z"/></svg>
@@ -689,7 +689,7 @@
 </section>
 
 <footer>
-  <p>© 2025 fatima zohra el baQQali — Fait avec passion 💙</p>
+  <p>© 2025 Sara Hamda — Fait avec passion 💙</p>
 </footer>
 
 <script>
